@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PropLink – Nigeria's premier AI-powered real estate platform. Find verified hostels, apartments, and properties near your campus.">
+<title>PropLink – Find Your Perfect Space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+</head>
+<body>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="container">
+    <a href="#home" class="nav-logo" data-page="home">
+      <img src="images/logo-icon.png" alt="PropLink" class="nav-logo-icon-img">
+      Prop<span>Link</span>
+    </a>
+    <div class="nav-links">
+      <a href="#home"    class="nav-link" data-page="home">Home</a>
+      <a href="#about"   class="nav-link" data-page="about">About</a>
+      <a href="#services" class="nav-link" data-page="services">Services</a>
+      <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+      <a href="#book"    class="nav-cta"  data-page="book">Book Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a class="nav-link" data-page="home">Home</a>
+  <a class="nav-link" data-page="about">About</a>
+  <a class="nav-link" data-page="services">Services</a>
+  <a class="nav-link" data-page="contact">Contact</a>
+  <a class="nav-link" data-page="book" style="color:var(--gold)">Book Now</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<!-- PAGE: HOME                                                          -->
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">🏠 Nigeria's Smartest Real Estate Platform</div>
+        <h1 class="hero-title">
+          Discover Your<br>
+          <span class="gold-line">Perfect Space</span>
+        </h1>
+        <p class="hero-sub">PropLink connects students, professionals, and families with verified, affordable properties near their campus or workplace — powered by AI matching and secured by OPay escrow.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary" data-page="book">
+            📋 Book a Property
+          </a>
+          <a href="#" class="btn-outline" data-page="services">
+            Explore Services →
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num" data-count="2400" data-suffix="+">2,400+</div>
+            <div class="hero-stat-label">Verified Properties</div>
+          </div>
+          <div>
+            <div class="hero-stat-num" data-count="5800" data-suffix="+">5,800+</div>
+            <div class="hero-stat-label">Happy Tenants</div>
+          </div>
+          <div>
+            <div class="hero-stat-num" data-count="36">36</div>
+            <div class="hero-stat-label">States Covered</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Card -->
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-img">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&q=80" alt="Modern apartment" loading="lazy">
+            <div class="hero-card-badge">Verified ✓</div>
+          </div>
+          <div class="hero-card-body">
+            <div class="hero-card-price">₦180,000/yr</div>
+            <div class="hero-card-name">Sunrise Student Hostel, Ilorin</div>
+            <div class="hero-card-meta">
+              <span>🚶 5 min walk</span>
+              <span>🛏 Single room</span>
+              <span>💧 Running water</span>
+            </div>
+          </div>
+          <div class="hero-card-footer">
+            <div class="ai-badge">🤖 AI Match</div>
+            <div class="match-score">94% match</div>
+          </div>
+        </div>
+        <!-- Floating mini cards -->
+        <div class="hero-mini-cards">
+          <div class="mini-card">
+            <div class="mini-icon" style="background:#f0fdf4">🔒</div>
+            <div>
+              <div class="mini-label">OPay Escrow</div>
+              <div class="mini-val">100% Secure</div>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-icon" style="background:#fefce8">⭐</div>
+            <div>
+              <div class="mini-label">Average Rating</div>
+              <div class="mini-val">4.8 / 5.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Box -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-box">
+        <div class="search-field">
+          <label>Location / University</label>
+          <input type="text" id="searchLocation" placeholder="e.g. University of Ilorin">
+        </div>
+        <div class="search-field">
+          <label>Property Type</label>
+          <select id="searchType">
+            <option value="">All Types</option>
+            <option>Student Hostel</option>
+            <option>Self-Contain</option>
+            <option>Apartment</option>
+            <option>Shared Room</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Budget (₦/year)</label>
+          <select id="searchBudget">
+            <option value="">Any Budget</option>
+            <option>Under ₦100,000</option>
+            <option>₦100k – ₦200k</option>
+            <option>₦200k – ₦400k</option>
+            <option>Above ₦400k</option>
+          </select>
+        </div>
+        <button class="search-btn" id="searchBtn">🔍 Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <div class="section-label">Why Choose PropLink</div>
+      <h2 class="section-title">Real Estate, Reinvented</h2>
+      <p class="section-sub">We combine AI intelligence, OPay's payment infrastructure, and local expertise to make property discovery safe, fast, and transparent.</p>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">🤖</div>
+          <h3 class="feature-title">AI-Powered Matching</h3>
+          <p class="feature-desc">Our algorithm analyses your budget, location preferences, and lifestyle to surface the properties most likely to feel like home.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">OPay Escrow Protection</h3>
+          <p class="feature-desc">Funds are held securely and only released to the landlord after you confirm move-in. Zero scam risk.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">✅</div>
+          <h3 class="feature-title">Verified Landlords</h3>
+          <p class="feature-desc">Every landlord undergoes KYC verification. Every listing is physically inspected before going live on PropLink.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📍</div>
+          <h3 class="feature-title">Campus-Proximity Filter</h3>
+          <p class="feature-desc">Filter by walking distance to your university gate. See exact commute times before you commit to a property.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">💳</div>
+          <h3 class="feature-title">Flexible Payments</h3>
+          <p class="feature-desc">Pay annually, bi-annually, or in monthly instalments via OPay wallet, bank transfer, or Rent-Now-Pay-Later.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🏘️</div>
+          <h3 class="feature-title">Roommate Matching</h3>
+          <p class="feature-desc">Find compatible roommates based on study habits, schedule, and lifestyle — turning shared living into an advantage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Listings -->
+  <section class="listings-preview">
+    <div class="container">
+      <div class="listings-header">
+        <div>
+          <div class="section-label">Featured Properties</div>
+          <h2 class="section-title" style="margin-bottom:0">Verified & AI-Matched</h2>
+        </div>
+        <a href="#" class="btn-gold-outline" data-page="book">View All Properties →</a>
+      </div>
+      <div class="listings-grid">
+        <!-- Card 1 -->
+        <div class="listing-card reveal">
+          <div class="listing-img">
+            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&q=80" alt="Sunrise Hostel" loading="lazy">
+            <div class="listing-tag">Hostel</div>
+            <div class="listing-match">🤖 94% match</div>
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">₦180,000/yr</div>
+            <div class="listing-name">Sunrise Student Hostel — Ilorin</div>
+            <div class="listing-amenities">
+              <span>🚿 Running water</span>
+              <span>⚡ Prepaid meter</span>
+              <span>📶 Wi-Fi</span>
+            </div>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-rating">⭐ 4.8 (42 reviews)</div>
+            <div class="listing-dist">📍 5 min walk</div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="listing-card reveal reveal-delay-1">
+          <div class="listing-img">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&q=80" alt="GreenVille Apartment" loading="lazy">
+            <div class="listing-tag">Self-Contain</div>
+            <div class="listing-match">🤖 87% match</div>
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">₦220,000/yr</div>
+            <div class="listing-name">GreenVille Apartments — Ilorin</div>
+            <div class="listing-amenities">
+              <span>🚿 Running water</span>
+              <span>🔒 Security gate</span>
+              <span>🅿️ Parking</span>
+            </div>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-rating">⭐ 4.6 (28 reviews)</div>
+            <div class="listing-dist">📍 8 min walk</div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="listing-card reveal reveal-delay-2">
+          <div class="listing-img">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&q=80" alt="Campus View Lodge" loading="lazy">
+            <div class="listing-tag">Apartment</div>
+            <div class="listing-match">🤖 79% match</div>
+          </div>
+          <div class="listing-body">
+            <div class="listing-price">₦350,000/yr</div>
+            <div class="listing-name">Campus View Lodge — Lagos</div>
+            <div class="listing-amenities">
+              <span>🏊 Pool</span>
+              <span>🔒 24/7 Security</span>
+              <span>⚡ Power backup</span>
+            </div>
+          </div>
+          <div class="listing-footer">
+            <div class="listing-rating">⭐ 4.9 (87 reviews)</div>
+            <div class="listing-dist">📍 12 min drive</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-label" style="text-align:center">Simple Process</div>
+      <h2 class="section-title white" style="text-align:center">From Search to Move-In</h2>
+      <div class="steps-grid">
+        <div class="step-item reveal">
+          <div class="step-num">1</div>
+          <h3 class="step-title">Tell Us What You Need</h3>
+          <p class="step-desc">Enter your university, budget, and preferences. Our AI takes it from there.</p>
+        </div>
+        <div class="step-item reveal reveal-delay-1">
+          <div class="step-num">2</div>
+          <h3 class="step-title">Get AI-Matched Listings</h3>
+          <p class="step-desc">Receive a curated shortlist of verified properties ranked by match score.</p>
+        </div>
+        <div class="step-item reveal reveal-delay-2">
+          <div class="step-num">3</div>
+          <h3 class="step-title">Book & Pay Securely</h3>
+          <p class="step-desc">Pay via OPay escrow. Funds only release after you confirm move-in.</p>
+        </div>
+        <div class="step-item reveal reveal-delay-3">
+          <div class="step-num">4</div>
+          <h3 class="step-title">Move In With Confidence</h3>
+          <p class="step-desc">Receive your keys, confirm everything checks out, and enjoy your new home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-label">What People Say</div>
+      <h2 class="section-title">Trusted by Thousands</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">PropLink found me a hostel 5 minutes from the UniIlorin gate for less than I expected. The escrow payment gave me peace of mind I never had with direct landlord deals.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AO</div>
+            <div>
+              <div class="author-name">Aisha Okonkwo</div>
+              <div class="author-role">300L Student, UniIlorin</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">I was skeptical but the AI match was spot on. Out of 5 suggestions, I loved 4 of them. Booked and moved in within a week. Incredible platform.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">BK</div>
+            <div>
+              <div class="author-name">Bola Karimu</div>
+              <div class="author-role">Corper, Lagos State</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="stars">★★★★☆</div>
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">As a landlord, listing on PropLink brought me quality tenants within days. The KYC process reassures me that I'm dealing with serious people only.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EI</div>
+            <div>
+              <div class="author-name">Emmanuel Ihejirika</div>
+              <div class="author-role">Landlord, Ibadan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Find Your Perfect Space?</h2>
+      <p>Join over 5,800 students and professionals who found their home through PropLink.</p>
+      <a href="#" class="btn-navy" data-page="book">Start Your Search →</a>
+    </div>
+  </section>
+
+</div><!-- end page-home -->
+
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<!-- PAGE: ABOUT                                                          -->
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label" style="justify-content:center;display:flex">Our Story</div>
+      <h1>Built by Students,<br>For Everyone</h1>
+      <p>PropLink was born from frustration — the chaos of finding student accommodation in Nigerian universities — and a belief that technology could make it better.</p>
+    </div>
+  </div>
+
+  <!-- Mission -->
+  <section class="about-mission">
+    <div class="container">
+      <div>
+        <div class="section-label">Our Mission</div>
+        <h2 class="section-title">Making Property Discovery Safe, Fast & Transparent</h2>
+        <p class="section-sub" style="max-width:100%">PropLink is Nigeria's first AI-powered real estate marketplace purpose-built for the needs of students, young professionals, and property owners who have been underserved by existing platforms. We believe everyone deserves to know where they'll live before they arrive — without fear of scams, hidden fees, or disappointment.</p>
+        <div class="about-values">
+          <div class="value-item"><div class="value-check">✓</div><div class="value-text"><strong>Transparency</strong> — No hidden fees. No fake listings. Ever.</div></div>
+          <div class="value-item"><div class="value-check">✓</div><div class="value-text"><strong>Security</strong> — OPay escrow protects every naira.</div></div>
+          <div class="value-item"><div class="value-check">✓</div><div class="value-text"><strong>Inclusion</strong> — USSD access for non-smartphone users.</div></div>
+          <div class="value-item"><div class="value-check">✓</div><div class="value-text"><strong>Innovation</strong> — AI matching, not manual searching.</div></div>
+        </div>
+        <div style="margin-top:2rem">
+          <a href="#" class="btn-primary" data-page="book">Start Your Search</a>
+        </div>
+      </div>
+      <div class="about-mission-img">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Team working" loading="lazy">
+        <div class="img-badge">Est. 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-row">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="num" data-count="2400" data-suffix="+">0</div>
+          <div class="lbl">Verified Listings</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="num" data-count="5800" data-suffix="+">0</div>
+          <div class="lbl">Happy Tenants</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="num" data-count="36">0</div>
+          <div class="lbl">States Covered</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="num" data-count="98" data-suffix="%">0</div>
+          <div class="lbl">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-label" style="text-align:center">Meet the Team</div>
+      <h2 class="section-title" style="text-align:center">The Minds Behind PropLink</h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto 0">Five passionate innovators united by a mission to fix Nigeria's housing problem with technology.</p>
+      <div class="team-grid">
+
+        <!-- Saliman Sukurat — Product Lead -->
+        <div class="team-card reveal">
+          <div class="team-photo">
+            <img src="images/team/saliman-sukurat.jpg" alt="Saliman Sukurat" loading="lazy">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Saliman Sukurat</div>
+            <div class="team-role">Product Lead</div>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abdulsamod Abdulfatai — Backend / AI Engineer -->
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-photo">
+            <img src="images/team/abdulsamod-abdulfatai.jpg" alt="Abdulsamod Abdulfatai" loading="lazy">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Abdulsamod Abdulfatai</div>
+            <div class="team-role">Backend / AI Engineer</div>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abdullahi Ridwanullahi — UI/UX & Frontend -->
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-photo">
+            <img src="images/team/abdullahi-ridwanullahi.jpg" alt="Abdullahi Ridwanullahi" loading="lazy">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Abdullahi Ridwanullahi</div>
+            <div class="team-role">UI/UX & Frontend</div>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abdulyaqin Maryam Opeyemi — Business & Finance -->
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-photo">
+            <img src="images/team/abdulyaqin-maryam.jpg" alt="Abdulyaqin Maryam Opeyemi" loading="lazy">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Abdulyaqin Maryam Opeyemi</div>
+            <div class="team-role">Business & Finance</div>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adam Abdulafeez Olamilekan — Marketing & Growth -->
+        <div class="team-card reveal reveal-delay-4">
+          <div class="team-photo">
+            <img src="images/team/adam-abdulafeez.jpg" alt="Adam Abdulafeez Olamilekan" loading="lazy">
+          </div>
+          <div class="team-body">
+            <div class="team-name">Adam Abdulafeez Olamilekan</div>
+            <div class="team-role">Marketing & Growth</div>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div><!-- end page-about -->
+
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<!-- PAGE: SERVICES                                                       -->
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-services">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label" style="display:flex;justify-content:center">What We Offer</div>
+      <h1>Comprehensive Real<br>Estate Solutions</h1>
+      <p>From student hostels to family apartments, agent tools to landlord dashboards — PropLink serves every stakeholder in the Nigerian property ecosystem.</p>
+    </div>
+  </div>
+
+  <section style="padding: 6rem 0; background: var(--off-white)">
+    <div class="container">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-title">Built for Every Stakeholder</h2>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🎓</div>
+          <h3 class="service-title">Student Housing</h3>
+          <p class="service-desc">Purpose-built for Nigerian university students. Find verified hostels, shared rooms, and self-contained apartments within walking distance of any campus in Nigeria.</p>
+          <div class="service-features">
+            <div class="service-feature">Campus-proximity mapping</div>
+            <div class="service-feature">AI-matched to your budget & lifestyle</div>
+            <div class="service-feature">Roommate finder included</div>
+            <div class="service-feature">OPay escrow on all payments</div>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">🏢</div>
+          <h3 class="service-title">Professional Rentals</h3>
+          <p class="service-desc">For young professionals relocating for work. Find furnished or unfurnished apartments, short-lets, and co-living spaces that fit your lifestyle and commute.</p>
+          <div class="service-features">
+            <div class="service-feature">Workplace proximity filter</div>
+            <div class="service-feature">Short-let & long-term options</div>
+            <div class="service-feature">Virtual tour on request</div>
+            <div class="service-feature">Flexible payment plans</div>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🏡</div>
+          <h3 class="service-title">Family Accommodation</h3>
+          <p class="service-desc">Spacious family apartments, gated estates, and residential properties across Nigeria's major cities and growing secondary markets.</p>
+          <div class="service-features">
+            <div class="service-feature">School & hospital proximity filters</div>
+            <div class="service-feature">Safety rating for neighbourhoods</div>
+            <div class="service-feature">Verified landlord agreements</div>
+            <div class="service-feature">Free legal review service</div>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">💼</div>
+          <h3 class="service-title">Landlord & Agent Tools</h3>
+          <p class="service-desc">A complete dashboard for property owners and real estate agents to list, manage, and monetise their portfolio at scale.</p>
+          <div class="service-features">
+            <div class="service-feature">One-click listing creation</div>
+            <div class="service-feature">Tenant screening reports</div>
+            <div class="service-feature">Automated rent reminders</div>
+            <div class="service-feature">Analytics & occupancy dashboard</div>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">💰</div>
+          <h3 class="service-title">Investment Properties</h3>
+          <p class="service-desc">For investors seeking profitable real estate opportunities. Browse high-yield properties, compare ROI projections, and connect with vetted developers.</p>
+          <div class="service-features">
+            <div class="service-feature">ROI projections per listing</div>
+            <div class="service-feature">Developer verification</div>
+            <div class="service-feature">Off-plan property access</div>
+            <div class="service-feature">Legal due diligence support</div>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🤖</div>
+          <h3 class="service-title">AI Concierge</h3>
+          <p class="service-desc">Our AI assistant guides you through the entire property journey — from search to negotiation to move-in — answering questions and making recommendations 24/7.</p>
+          <div class="service-features">
+            <div class="service-feature">24/7 chat support</div>
+            <div class="service-feature">Personalised property suggestions</div>
+            <div class="service-feature">Rent negotiation tips</div>
+            <div class="service-feature">USSD access on *955#</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-label" style="text-align:center;color:var(--gold)">Simple Pricing</div>
+      <h2 class="section-title white" style="text-align:center">Transparent. No Hidden Fees.</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-label">Tenant — Free</div>
+          <div class="pricing-price">₦0</div>
+          <div class="pricing-period">always free to search & book</div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="check">✓</span> Unlimited property search</div>
+            <div class="pricing-feature"><span class="check">✓</span> AI match results</div>
+            <div class="pricing-feature"><span class="check">✓</span> OPay escrow payments</div>
+            <div class="pricing-feature"><span class="check">✓</span> Booking management</div>
+            <div class="pricing-feature"><span class="check">✓</span> Review & rate properties</div>
+          </div>
+          <a href="#" class="btn-outline" data-page="book">Get Started Free</a>
+        </div>
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-label">Landlord / Agent</div>
+          <div class="pricing-price">₦50k</div>
+          <div class="pricing-period">per property listing / year</div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="check">✓</span> Verified listing badge</div>
+            <div class="pricing-feature"><span class="check">✓</span> Tenant screening reports</div>
+            <div class="pricing-feature"><span class="check">✓</span> AI-promoted visibility</div>
+            <div class="pricing-feature"><span class="check">✓</span> Automated rent reminders</div>
+            <div class="pricing-feature"><span class="check">✓</span> Analytics dashboard</div>
+          </div>
+          <a href="#" class="btn-navy" data-page="contact" style="display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;border-radius:var(--radius);background:var(--navy);color:#fff;font-weight:700;border:2px solid var(--navy);transition:var(--transition)">List a Property</a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-label">Enterprise</div>
+          <div class="pricing-price">Custom</div>
+          <div class="pricing-period">for developers & large portfolios</div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="check">✓</span> Bulk listing tools</div>
+            <div class="pricing-feature"><span class="check">✓</span> API integration</div>
+            <div class="pricing-feature"><span class="check">✓</span> Dedicated account manager</div>
+            <div class="pricing-feature"><span class="check">✓</span> Priority support</div>
+            <div class="pricing-feature"><span class="check">✓</span> Co-marketing opportunities</div>
+          </div>
+          <a href="#" class="btn-outline" data-page="contact">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end page-services -->
+
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<!-- PAGE: BOOK NOW                                                       -->
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-book">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label" style="display:flex;justify-content:center">Book a Property</div>
+      <h1>Reserve Your Space<br>in Minutes</h1>
+      <p>Fill in your requirements and our team will match you with the best verified properties within 24 hours — completely free.</p>
+    </div>
+  </div>
+
+  <section class="booking-section">
+    <div class="container">
+      <div class="booking-layout">
+        <div class="booking-info">
+          <h3>Why Book Through PropLink?</h3>
+          <p>Skip the stress of estate agents, fake listings, and upfront deposits that disappear. PropLink handles everything — from property matching to secure payment and move-in confirmation.</p>
+          <div class="booking-perks">
+            <div class="booking-perk">
+              <div class="perk-icon">🔒</div>
+              <div>
+                <div class="perk-title">OPay Escrow Guarantee</div>
+                <div class="perk-desc">Your payment is held securely and only released to the landlord after you confirm the property matches the listing.</div>
+              </div>
+            </div>
+            <div class="booking-perk">
+              <div class="perk-icon">⚡</div>
+              <div>
+                <div class="perk-title">24-Hour Response</div>
+                <div class="perk-desc">Our team will contact you with matched listings within 24 hours of submitting your request.</div>
+              </div>
+            </div>
+            <div class="booking-perk">
+              <div class="perk-icon">✅</div>
+              <div>
+                <div class="perk-title">All Listings Verified</div>
+                <div class="perk-desc">Every property has been physically inspected and every landlord has completed KYC before listing.</div>
+              </div>
+            </div>
+            <div class="booking-perk">
+              <div class="perk-icon">💳</div>
+              <div>
+                <div class="perk-title">Flexible Payment</div>
+                <div class="perk-desc">Pay annually, bi-annually, or in monthly instalments via OPay. No lump-sum pressure.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="booking-form-wrap" id="bookingFormWrap">
+            <h4>Request a Property Match</h4>
+            <p class="form-sub">Complete the form and we'll find your ideal property within 24 hours.</p>
+
+            <form id="bookingForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name *</label>
+                  <input type="text" name="firstName" required placeholder="e.g. Aisha">
+                </div>
+                <div class="form-group">
+                  <label>Last Name *</label>
+                  <input type="text" name="lastName" required placeholder="e.g. Okonkwo">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Email Address *</label>
+                  <input type="email" name="email" required placeholder="you@email.com">
+                </div>
+                <div class="form-group">
+                  <label>Phone Number *</label>
+                  <input type="tel" name="phone" required placeholder="+234 800 000 0000">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Nearest University / Location *</label>
+                <input type="text" name="location" required placeholder="e.g. University of Ilorin, Kwara State">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Property Type *</label>
+                  <select name="propertyType" required>
+                    <option value="">Select type…</option>
+                    <option>Student Hostel</option>
+                    <option>Self-Contain</option>
+                    <option>Shared Room</option>
+                    <option>Apartment</option>
+                    <option>Family House</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Annual Budget (₦) *</label>
+                  <select name="budget" required>
+                    <option value="">Select range…</option>
+                    <option>Under ₦100,000</option>
+                    <option>₦100,000 – ₦200,000</option>
+                    <option>₦200,000 – ₦400,000</option>
+                    <option>₦400,000 – ₦700,000</option>
+                    <option>Above ₦700,000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Move-In Date *</label>
+                  <input type="date" name="moveInDate" required>
+                </div>
+                <div class="form-group">
+                  <label>Duration</label>
+                  <select name="duration">
+                    <option>1 Academic Year</option>
+                    <option>6 Months</option>
+                    <option>1 Month (Short-let)</option>
+                    <option>2+ Years</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Must-Have Amenities</label>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px">
+                  <label style="display:flex;align-items:center;gap:5px;font-size:0.85rem;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-mid)"><input type="checkbox" name="amenity_water" style="accent-color:var(--gold)"> Running water</label>
+                  <label style="display:flex;align-items:center;gap:5px;font-size:0.85rem;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-mid)"><input type="checkbox" name="amenity_wifi"> Wi-Fi</label>
+                  <label style="display:flex;align-items:center;gap:5px;font-size:0.85rem;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-mid)"><input type="checkbox" name="amenity_security"> Security gate</label>
+                  <label style="display:flex;align-items:center;gap:5px;font-size:0.85rem;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-mid)"><input type="checkbox" name="amenity_power"> Prepaid meter</label>
+                  <label style="display:flex;align-items:center;gap:5px;font-size:0.85rem;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-mid)"><input type="checkbox" name="amenity_parking"> Parking</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Additional Requirements</label>
+                <textarea name="notes" placeholder="e.g. I need a quiet environment for studying. Prefer female-only hostel…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                🏠 Submit Booking Request
+              </button>
+              <p class="form-note">🔒 Your information is secure and will never be shared. Our team will respond within 24 hours.</p>
+            </form>
+
+            <div class="success-message" id="bookingSuccess">
+              <div class="check-icon">🎉</div>
+              <h4>Booking Request Received!</h4>
+              <p>Our team will contact you within 24 hours with matched properties. Check your email and phone for updates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end page-book -->
+
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<!-- PAGE: CONTACT                                                        -->
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label" style="display:flex;justify-content:center">Get In Touch</div>
+      <h1>We're Here<br>to Help</h1>
+      <p>Have a question, want to list a property, or interested in partnering with PropLink? We'd love to hear from you.</p>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h3>Reach Out to the PropLink Team</h3>
+          <p>Whether you're a student looking for accommodation, a landlord wanting to list, or an investor seeking opportunities — our team is available Monday to Saturday, 8am – 8pm (WAT).</p>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div>
+                <div class="contact-card-label">Office Address</div>
+                <div class="contact-card-val">University of Ilorin, Ilorin, Kwara State, Nigeria</div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">📞</div>
+              <div>
+                <div class="contact-card-label">Phone / WhatsApp</div>
+                <div class="contact-card-val"><a href="tel:+2348100145973" style="color:inherit">+234 810 014 5973</a></div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div>
+                <div class="contact-card-label">Email</div>
+                <div class="contact-card-val"><a href="mailto:proplink3591@gmail.com" style="color:inherit">proplink3591@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">⏰</div>
+              <div>
+                <div class="contact-card-label">Working Hours</div>
+                <div class="contact-card-val">Mon – Sat, 8:00am – 8:00pm WAT</div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-bottom:1rem;font-size:0.85rem;color:var(--grey)">Follow us</div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="https://wa.me/2348100145973" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-icon">🗺️</div>
+            <p>University of Ilorin, Kwara State</p>
+            <small style="opacity:0.5;font-size:0.75rem">Map integration coming soon</small>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-form-wrap">
+            <h4>Send Us a Message</h4>
+            <p class="form-sub">We typically respond within 2–4 business hours.</p>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Your Name *</label>
+                  <input type="text" name="name" required placeholder="Full name">
+                </div>
+                <div class="form-group">
+                  <label>Email Address *</label>
+                  <input type="email" name="email" required placeholder="you@email.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="+234 800 000 0000">
+              </div>
+              <div class="form-group">
+                <label>Subject *</label>
+                <select name="subject" required>
+                  <option value="">Select a topic…</option>
+                  <option>I'm looking for a property</option>
+                  <option>I want to list a property</option>
+                  <option>Payment / escrow enquiry</option>
+                  <option>Partnership / investor enquiry</option>
+                  <option>Technical support</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Message *</label>
+                <textarea name="message" required placeholder="Tell us how we can help…" style="min-height:140px"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                ✉️ Send Message
+              </button>
+            </form>
+            <div class="success-message" id="contactSuccess">
+              <div class="check-icon">✅</div>
+              <h4>Message Received!</h4>
+              <p>Thank you for reaching out. We'll reply to your email within 2–4 business hours.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ quick section -->
+  <section style="padding:4rem 0;background:var(--navy)">
+    <div class="container">
+      <div class="section-label" style="text-align:center;color:var(--gold)">Quick Answers</div>
+      <h2 class="section-title white" style="text-align:center;margin-bottom:3rem">Frequently Asked Questions</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:900px;margin:0 auto">
+        <div style="background:var(--navy-mid);border-radius:12px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06)" class="reveal">
+          <div style="font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:.5rem">Is PropLink free for tenants?</div>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.7">Yes — searching, matching, and booking are completely free for tenants. We earn from landlord listing fees and transaction processing.</div>
+        </div>
+        <div style="background:var(--navy-mid);border-radius:12px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06)" class="reveal reveal-delay-1">
+          <div style="font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:.5rem">How does OPay escrow work?</div>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.7">When you pay rent, funds go into an OPay escrow account. They're only released to the landlord after you confirm you've moved in and everything matches the listing.</div>
+        </div>
+        <div style="background:var(--navy-mid);border-radius:12px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06)" class="reveal">
+          <div style="font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:.5rem">What if the property doesn't match?</div>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.7">If the property significantly differs from its listing, you're entitled to a full refund from escrow. Our dispute team resolves cases within 48 hours.</div>
+        </div>
+        <div style="background:var(--navy-mid);border-radius:12px;padding:1.5rem;border:1px solid rgba(255,255,255,0.06)" class="reveal reveal-delay-1">
+          <div style="font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:.5rem">Can I list a property as a landlord?</div>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.7">Yes! Contact us or visit the Services page to learn how. Listings cost ₦50,000/year and include AI-promoted visibility, tenant screening, and analytics.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end page-contact -->
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:1rem">
+          <img src="images/logo-icon.png" alt="PropLink" class="nav-logo-icon-img">
+          Prop<span>Link</span>
+        </div>
+        <p>Nigeria's AI-powered real estate marketplace. Find verified hostels, apartments, and properties — safe, fast, and transparent.</p>
+        <p style="margin-top:0.5rem;font-style:italic;color:rgba(255,255,255,0.4);font-size:0.82rem">Find. Connect. Own with Confidence.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="https://wa.me/2348100145973" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Platform</div>
+        <div class="footer-links">
+          <a href="#" data-page="home">Home</a>
+          <a href="#" data-page="services">Services</a>
+          <a href="#" data-page="book">Book a Property</a>
+          <a href="#" data-page="about">About Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">For Landlords</div>
+        <div class="footer-links">
+          <a href="#" data-page="services">List a Property</a>
+          <a href="#" data-page="services">Pricing</a>
+          <a href="#" data-page="contact">Partner With Us</a>
+          <a href="#" data-page="contact">Support</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <div class="footer-links">
+          <a href="#">📍 University of Ilorin, Kwara State</a>
+          <a href="mailto:proplink3591@gmail.com">✉️ proplink3591@gmail.com</a>
+          <a href="tel:+2348100145973">📞 +234 810 014 5973</a>
+          <a href="#">⏰ Mon–Sat 8am–8pm</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PropLink. All rights reserved. Built for the OPay × Google Innovation Challenge.</p>
+      <p style="color:rgba(255,255,255,0.3)">Privacy Policy · Terms of Service</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
